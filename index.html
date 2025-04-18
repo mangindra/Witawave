@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITAWAVE DOLPHIN TOUR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#beranda">
+                <img src="images/logo.png" alt="Logo" width="70" height="70" class="me-3 rounded-circle">
+                WITAWAVE DOLPHIN TOUR
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#beranda" data-lang="dashboard"><strong>Dashboard</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paket" data-lang="packages"><strong>Packages</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang" data-lang="about-us"><strong>About Us</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak" data-lang="contact"><strong>Contact</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-lang="language">
+                            <strong>Language</strong>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')"><span
+                                        class="fi fi-id"></span> Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')"><span
+                                        class="fi fi-gb"></span> English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero section-fade" id="beranda">
+        <div class="container">
+            <h1 class="display-4 fw-bold" data-lang="hero-heading">Explore Lovina with WITAWAVE Dolphin Tour</h1>
+            <strong>
+                <p class="lead" data-lang="hero-subheading">Discover your dream destination and make your vacation
+                    unforgettable.</p>
+            </strong>
+            <a href="#paket" class="btn btn-warning btn-lg mt-3" data-lang="view-package">View Package</a>
+        </div>
+    </section>
+
+    <section class="py-5 section-fade" id="tentang">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder text-black mb-2" data-lang="witawave">WITAWAVE</h2>
+                <p class="lead text-black-50 mb-4" data-lang="welcome-text">Welcome to WITAWAVE Dolphin Tour!
+                    Experience the magic of watching wild dolphins in their natural habitat with our exclusive tour
+                    packages in Lovina, Buleleng – Singaraja, Bali.
+                    We provide safe and comfortable boats, friendly service, and experienced local guides to ensure an
+                    unforgettable adventure on the northern coast of Bali.
+                    Start your morning with the beauty of the ocean and the joy of seeing dolphins dance in the waves!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Paket Wisata -->
+    <section class="py-5 section-fade" id="paket">
+        <div class="container">
+            <h2 class="mb-4 text-center" data-lang="packages"><strong>Packages</strong></h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/sunsetlumba.jpg" class="card-img-top" alt="sunsetlumba">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="paket1">Watching Dolphins at Sunrise</h5>
+                            <p class="card-text" data-lang="paket1-detail">you can already enjoy the beauty of the
+                                sunrise while
+                                watching the dolphin attraction.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#detail1" data-lang="detail">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/snorkeling.jpg" class="card-img-top" alt="snorkeling">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="paket2">Snorkeling Around the Coral Reefs</h5>
+                            <p class="card-text" data-lang="paket2-detail">Snorkeling is an activity that allows you to
+                                explore the underwater
+                                beauty of coral reefs and marine life.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#detail2" data-lang="detail">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/berenanglumba.jpg" class="card-img-top" alt="berenanglumba">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="paket3">Swim with Dolphins</h5>
+                            <p class="card-text" data-lang="paket3-detail">Swimming with dolphins is a unique experience
+                                that allows you to
+                                interact with these intelligent creatures in their natural habitat.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#detail3" data-lang="detail">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/allpackage.png" class="card-img-top" alt="berenanglumba">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="paket4">Discount Package – All Activities</h5>
+                            <p class="card-text" data-lang="paket4-detail"> This package includes all activities at a
+                                discounted price.</p><br>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#detail4" data-lang="detail">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Lokasi Google Maps -->
+    <section class="py-5 bg-light section-fade">
+        <div class="container">
+            <h2 class="text-center mb-4" data-lang="our-location"><strong>Our Location</strong></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.514840221014!2d115.05196459999999!3d-8.1507695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19b004549b711%3A0x9a255cdec1da853c!2sJro%20Wita!5e0!3m2!1sen!2sid!4v1744860735508!5m2!1sen!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light section-fade" id="pembayaran">
+        <div class="container">
+            <h2 class="text-center mb-4 text-dark" data-lang="payment-info"><strong>Payment Information</strong></h2>
+            <div class="row">
+                <!-- Bagian Transfer ke Bank -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-light rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary" data-lang="transfer-to"><i class="bi bi-bank"></i>
+                                Transfer to Bank</h5>
+                            <p class="card-text" data-lang="transfer-to-detail">Please make your payment transfer to one
+                                of the following accounts:</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Bank BCA:</strong> 123-456-7890 a/n DolphinLovina</li>
+                                <li><strong>Bank Mandiri:</strong> 987-654-3210 a/n DolphinLovina</li>
+                                <li><strong>Bank BNI:</strong> 112-233-4455 a/n DolphinLovina</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian Konfirmasi Pembayaran -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-light rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-success" data-lang="payment-confirmation"><i
+                                    class="bi bi-check-circle"></i> Payment Confirmation
+                            </h5>
+                            <p class="card-text" data-lang="payment-conf-detail">After making the transfer, please
+                                confirm your payment immediately
+                                through our WhatsApp or email.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>WhatsApp:</strong> <a
+                                        href="https://wa.me/6281933165101?text=Halo%20admin%2C%20saya%20ingin%20konfirmasi%20pembayaran%20paket%20wisata."
+                                        target="_blank" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i>
+                                        0819-3316-5101</a></li>
+                                <li><strong>Email:</strong> <a href="mailto:nandasuryawitadarma@gmail.com"
+                                        class="btn btn-primary btn-sm"><i class="bi bi-envelope"></i>
+                                        nandasuryawitadarma@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="detail1" tabindex="-1" aria-labelledby="detail1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detail1Label" data-lang="paket1">Watching Dolphin at Sunrise</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/sunsetlumba.jpg" class="img-fluid mb-3" alt="Bali">
+                    <p data-lang="watch-dolphin">Enjoy an unforgettable experience watching wild dolphins dance in the
+                        open sea as the sun rises!
+                        With friendly service and comfortable boats, this journey will be a special moment you will
+                        never
+                        forget. You can choose between a Private Boat for a more exclusive atmosphere, or a Sharing Boat
+                        for a more affordable yet still fun experience.</p>
+                    <h3 data-lang="package-price">Package Price:</h3>
+                    <h3 data-lang="private-boat">Private Boat</h3>
+                    <div class="private" data-lang="private-boat-detail">
+                        <ul>
+                            <li>1 Person: Rp340,000/person</li>
+                            <li>2 Persons: Rp255,000/person</li>
+                            <li>3 Persons: Rp212,500/person</li>
+                            <li>4 Persons: Rp170,000/person</li>
+                            <li>More than 4 Persons: Rp100,000/person</li>
+                        </ul>
+                    </div>
+                    <h3 data-lang="sharing-boat">Sharing Boat</h3>
+                    <div class="sharing" data-lang="sharing-boat-detail">
+                        <ul>
+                            <li>1 Person: Rp255,000/person</li>
+                            <li>2 Persons: Rp212,500/person</li>
+                            <li>3 Persons: Rp170,000/person</li>
+                            <li>4 Persons: Rp127,500/person</li>
+                            <li>More than 4 Persons: Rp85,000/person</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        data-lang="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="detail2" tabindex="-1" aria-labelledby="detail2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detail2Label" data-lang="paket2">Snorkeling around the Coral Reefs</h5>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/snorkeling.jpg" class="img-fluid mb-3" alt="Lombok">
+                    <p data-lang="snorkeling-detail">Explore the breathtaking underwater beauty of Lovina with
+                        snorkeling in the coral reef area!
+                        Enjoy the experience of diving in crystal-clear waters while witnessing vibrant tropical fish
+                        and stunning coral formations. This package is perfect for all levels, whether you are a
+                        beginner
+                        or an experienced diver.</p>
+                    <h3 data-lang="package-price">Package Price:</h3>
+                    <div data-lang="snorkeling-price">
+                        <ul>
+                            <li>1-2 Persons: Rp127.500/person</li>
+                            <li>More than 2 Persons: Rp85.000/person</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        data-lang="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="detail3" tabindex="-1" aria-labelledby="detail3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detail3Label" data-lang="paket3">Swim with Dolphins</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/berenanglumba.jpg" class="img-fluid mb-3" alt="Jepang">
+                    <p data-lang="swim-with-dolphins">Feel the extraordinary sensation of swimming with dolphins in
+                        their natural habitat! This package
+                        is specially designed for those who want to get closer and interact directly with these
+                        intelligent and friendly sea creatures. Under the close supervision of our professional guides,
+                        this experience is safe for all ages and will become an unforgettable memory.</p>
+                    <h3 data-lang="package-price">Package Price:</h3>
+                    <div class="swim-with-dolphin" data-lang="detail-price">
+                        <ul>
+                            <li>1–2 Persons: Rp127,500/person</li>
+                            <li>More than 2 Persons: Rp85,000/person</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        data-lang="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="detail4" tabindex="-1" aria-labelledby="detail3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detail3Label" data-lang="paket4">Discount Package - All Activities</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/allpackage.png" class="img-fluid mb-3" alt="Jepang">
+                    <p data-lang="paket4-full">
+                        Maximize your Lovina experience with our <strong>Discount Package</strong>! This all-in-one deal
+                        includes
+                        <em>Watching Dolphins at Sunrise</em>, <em>Swimming with Dolphins</em>, and <em>Snorkeling
+                            around Coral Reefs</em>
+                        at a more affordable price. Ideal for individuals, couples, or groups who want to enjoy the full
+                        adventure
+                        without breaking the bank!
+                    </p>
+                    <h3 data-lang="package-price">Package Price:</h3>
+                    <div data-lang="discount-price">
+                        <ul>
+                            <li>1 Person: <strong>Rp510.000</strong>/boat <span style="text-decoration: line-through;">Rp595.000</span></li>
+                            <li>2 Persons: <strong>Rp680.000</strong>/boat <span style="text-decoration: line-through;">Rp1.020.000</span></li>
+                            <li>3 Persons: <strong>Rp935.000</strong>/boat <span style="text-decoration: line-through;">Rp1.147.500</span></li>
+                            <li>4 Persons: <strong>Rp1.190.000</strong>/boat <span style="text-decoration: line-through;">Rp1.360.000</span></li>
+                            <li>More than 4 Persons: <strong>Rp255.000</strong>/person <span style="text-decoration: line-through;">Rp297.500</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        data-lang="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4" id="kontak">
+        <div class="container">
+            <p data-lang="hak-cipta">&copy; 2025 DolphinLovina. All rights reserved.</p>
+            <p data-lang="contact-us2">Contact Us: nandasuryawitadarma@gmail.com | WhatsApp: 0819-3316-5101</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".section-fade");
+
+            function checkVisibility() {
+                sections.forEach((section) => {
+                    const rect = section.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+                    if (isVisible) {
+                        section.classList.add("visible");
+                    } else {
+                        section.classList.remove("visible");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkVisibility);
+            checkVisibility(); // initial check on load
+        });
+    </script>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281933165101" target="_blank">
+            <img src="images/whatsapp.jpg" alt="WhatsApp">
+        </a>
+    </div>
+</body>
+
+</html>
